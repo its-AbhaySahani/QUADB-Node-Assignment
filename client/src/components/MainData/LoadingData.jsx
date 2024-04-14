@@ -5,7 +5,7 @@ export const Main = () => {
 
   useEffect(() => {
   const interval = setInterval(() => {
-    fetch("https://quadb-server-chi.vercel.app/tickers")
+    fetch("http://localhost:5000/tickers")
 			.then((res) => res.json())
 			.then((data) => {
 				setData(data[0].tickers);
