@@ -5,7 +5,7 @@ export const Main = () => {
 
   useEffect(() => {
   const interval = setInterval(() => {
-    fetch("http://localhost:5000/tickers")
+    fetch("https://quadb-node-assignment.onrender.com/tickers")
 			.then((res) => res.json())
 			.then((data) => {
 				setData(data[0].tickers);
