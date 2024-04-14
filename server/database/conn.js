@@ -1,19 +1,29 @@
-const { MongoClient, ServerApiVersion } = require('mongodb');
+// const mongoose = require('mongoose');
 
-const uri = `mongodb+srv://abhay12115826:gzLvZLHvPAq52SEo@quadb.v3omskc.mongodb.net/?retryWrites=true&w=majority&appName=QUADB`;
+// const uri = "mongodb://127.0.0.1:27017/Long-Drive";
 
-const client = new MongoClient(uri, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    serverApiVersion: ServerApiVersion.v1,
-});
+// // Define the schema for the "tickers" model
+// const tickerSchema = new mongoose.Schema({
+//   name: String,
+//   last: Number,
+//   buy: Number,
+//   sell: Number,
+//   volume: Number,
+//   base_unit: String
+// }, { collection: 'tickers' });
 
-client.connect(err => {
-    if (err) {
-        console.error('Failed to connect to MongoDB', err);
-    } else {
-        console.log('Successfully connected to MongoDB');
-    }
-});
+// // Register the schema with Mongoose
+// mongoose.model('Ticker', tickerSchema);
 
-module.exports = client;
+// const connectDb = async () => {
+//     try {
+//         const client = await mongoose.connect(uri);
+//         console.log("Successfully connected to MongoDB");
+//         return client;
+//     } catch (error) {
+//         console.error("Failed to connect to MongoDB", error);
+//         process.exit(0);
+//     }
+// };
+
+// module.exports = connectDb;
