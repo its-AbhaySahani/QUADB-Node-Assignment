@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 });
 
 const uri = 'mongodb+srv://abhay12115826:N3bFV5aUXS0nyVdl@quadb.v3omskc.mongodb.net/?retryWrites=true&w=majority&appName=QUADB';
-
+// const uri = "mongodb://Localhost:27017";
 const client = new MongoClient(uri, {
     serverApi: ServerApiVersion.v1,
 });
