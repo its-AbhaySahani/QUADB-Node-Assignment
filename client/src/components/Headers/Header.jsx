@@ -31,10 +31,7 @@ export const Header = () => {
 				<p
 					className="text-secondary m-0 w-50"
 					style={{ textAlign: "left", verticalAlign: "middle" }}>
-					<b>
-						{" "}
-						Powered By <span className="text-info">Finstreet</span>
-					</b>
+		
 				</p>
 			</div>
 			<div
